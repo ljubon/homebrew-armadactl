@@ -5,28 +5,28 @@
 class Armadactl < Formula
   desc "Example binary distribution using homebrew"
   homepage "https://github.com/ljubon/homebrew-armadactl"
-  version "0.3.96"
+  version "0.3.97"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ljubon/armada/releases/download/v0.3.96/armadactl_0.3.96_darwin_amd64.tar.gz"
-      sha256 "f712628266c17ee37c41835814a4832c12d82a228bf3e2c31d10daebcb8cd127"
+      url "https://github.com/ljubon/armada/releases/download/v0.3.97/armadactl_0.3.97_darwin_amd64.tar.gz"
+      sha256 "55daddf5e0fd2353c1c8874ad105f999717b7a305562e856df695862a5c3084c"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ljubon/armada/releases/download/v0.3.96/armadactl_0.3.96_darwin_arm64.tar.gz"
-      sha256 "ab8e98cb59be46c95a301f3eb0fe41bd1ef2b65981ba60070043ba47f15968ee"
+      url "https://github.com/ljubon/armada/releases/download/v0.3.97/armadactl_0.3.97_darwin_arm64.tar.gz"
+      sha256 "9dd4c8d91b6f89b331de73ecb205b299a048a7651036cbd94b59e466c0656cb5"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ljubon/armada/releases/download/v0.3.96/armadactl_0.3.96_linux_amd64.tar.gz"
-      sha256 "281ddb35d32d7f9bae8d927176587f2f8614167b64c8777d9433493a9b04e4e1"
+      url "https://github.com/ljubon/armada/releases/download/v0.3.97/armadactl_0.3.97_linux_amd64.tar.gz"
+      sha256 "e361e1a9a86403643567fd1923f7d845d674c4cc2a578e6b89d3c66213abc79f"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ljubon/armada/releases/download/v0.3.96/armadactl_0.3.96_linux_arm64.tar.gz"
-      sha256 "28adf8363eb8b6d425f3ea5fcdd84ab8fc59ede9154e7c9975e4eda367869cf0"
+      url "https://github.com/ljubon/armada/releases/download/v0.3.97/armadactl_0.3.97_linux_arm64.tar.gz"
+      sha256 "cb755ec6c87b0fa5233d4338a12366a80a49e12a1fc5a64475cb6fff91d1f8ba"
     end
   end
 
